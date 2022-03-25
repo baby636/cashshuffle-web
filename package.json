@@ -21,5 +21,12 @@
     "grunt-contrib-watch": "^1.1.0",
     "braces": ">=3.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@snyk/protect": "latest"
+  },
+  "scripts": {
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
